@@ -1,160 +1,235 @@
 /* Reset and Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section,
+.section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+section h2,
+.section h2 {
+  color: #0077cc;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section p,
+section p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.section p em {
+  color: #0077cc;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  background-color: #e0f7fa;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: #e0f7fa;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.hero-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero-text h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Profile Image */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0077cc;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background-color: #0077cc;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #005fa3;
+}
+
+.btn.secondary {
+  background-color: white;
+  color: #0077cc;
+  border: 2px solid #0077cc;
+}
+
+.btn.secondary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Project Cards */
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Skills */
+#skills ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #0077cc;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resume-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Contact */
+#contact a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
   body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    font-size: 16px;
   }
-  
-  /* Header */
-  header {
-    background-color: #222;
-    color: white;
-    padding: 1rem 2rem;
-    text-align: center;
-  }
-  
-  nav {
-    margin-top: 0.5rem;
-  }
-  
+
   nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: 500;
+    display: block;
+    margin: 0.5rem 0;
   }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Sections */
-  section {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  section h2 {
-    margin-bottom: 1rem;
-    color: #444;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 0.5rem;
-  }
-  
-  /* Hero Section */
-  #hero {
-    text-align: center;
-    background-color: #e0f7fa;
-    border-radius: 12px;
+
+  section,
+  .section {
+    padding: 1rem;
   }
 
   .profile-pic {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #0077cc;
-    margin-bottom: 1rem;
-  }  
-  
-  /* Project Cards */
-  .project-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    background-color: #fafafa;
+    width: 120px;
+    height: 120px;
   }
-  
-  .project-card h3 {
-    margin-bottom: 0.5rem;
-    color: #222;
-  }
-  
-  .project-card a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #0077cc;
-    text-decoration: none;
-  }
-  
-  .project-card a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Skills List */
-  #skills ul {
-    list-style-type: square;
-    padding-left: 1.5rem;
-  }
-  
-  .resume-btn {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #0077cc;
-    color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .resume-btn:hover {
-    background-color: #005fa3;
-  }
-  
-
-  /* Contact Section */
-  #contact a {
-    color: #0077cc;
-    text-decoration: none;
-  }
-  
-  #contact a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #222;
-    color: white;
-    margin-top: 2rem;
-  }
-  
-  @media screen and (max-width: 600px) {
-    body {
-      font-size: 16px;
-    }
-  
-    nav a {
-      display: block;
-      margin: 0.5rem 0;
-    }
-  
-    section {
-      padding: 1rem;
-    }
-  
-    .project-card {
-      padding: 1rem;
-    }
-  
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-    }
-  }
-  
+}
