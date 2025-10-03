@@ -1,133 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mayank Singh | Portfolio</title>
-  <link rel="icon" href="icon.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-        font-size: 70%;
-      }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Singh - Portfolio</title>
+    <meta name="description" content="Mayank Singh - B.Tech CSE Student | Data Analyst | Python Developer | Business Analyst Intern at PANTECH Secure Solutions">
+    <meta name="keywords" content="Mayank Singh, Portfolio, Python Developer, Data Analyst, Business Analyst, CSE Student, PSIT">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+    (function(){
+        emailjs.init('SBpwcFPwvrEhmoo6Z');
+    })();
+    </script>
 </head>
 <body>
-  <header>
-    <h1>Mayank Singh</h1>
-    <nav>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-      
-  </header>
-
-  <section id="hero">
-    <div class="hero-container">
-      <img src="profile.jpg" alt="Mayank's photo" class="profile-pic" />
-      <div class="hero-text">
-        <h2>Hello! I'm <span class="highlight">Mayank Singh (Developer by Logic, Designer by Instinct)</span> 👋</h2>
-        <p>Analytical Computer Science student skilled in Python, SQL, and data analysis. Experienced in building practical tools like management systems and trading backtesters.</p>
-        <br>
-        <div class="hero-buttons">
-          <a href="resume.pdf" download class="btn primary">📄 Resume</a>
-          <a href="contact.html" class="btn secondary">📬 Contact Me</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link" aria-label="Home">
+                    <span class="logo-badge">MS</span>
+                    <span class="logo-wordmark">Mayank Singh</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p style="font-size: 1rem;">Hello! I'm a 21-year-old with a curious, slightly sardonic heart who has a strong passion for music, animals, and the outdoors.</p>
-    <p style="font-size: 1rem;">Perhaps it's my serene demeanor or the fact that I truly care, but I've always been the type of person who others open up to. I think it's important to support people in difficult times as well as in pleasant ones. My friends refer to me as the mature person who always puts the needs of others before their own. They're also not incorrect.</p>
-    <p style="font-size: 1rem;">I have a special place in my heart for dogs, and if I'm by myself, you can probably find me strolling around a green space or losing myself in music. Nature is my reset button, and singing is my therapy.</p>
-    <p style="font-size: 1rem;">Sarcasm, which keeps things light while maintaining a strong sense of groundedness, is my secret sauce since life is too short to be taken too seriously. I cherish sincere discussions, enduring friendships, and the small pleasures in life.</p>
-    <p style="font-size: 1rem;"><em>I, the dreamer, the listener, the artist, am reflected in this area. I appreciate you coming by. Let's collaborate, communicate, and perhaps even sing a few songs together.</em></p>
-  </section>    
-  
-  <section id="interests" style="padding: 2rem; font-family: Arial, sans-serif; line-height: 1.6;">
-    <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Interests & Hobbies</h2>
-    <p style="font-size: 1rem;">
-      My interests are a quirky blend of creativity, compassion, and curiosity.
-    </p>
-    <p style="font-size: 1rem;">
-      More than merely a pastime, <strong>singing</strong> has always served as a soulful escape.
-      Music keeps my spirit alive, whether I’m humming through a calm evening or belting out a favorite tune.
-    </p>
-    <p style="font-size: 1rem;">
-      I engage in <strong>volunteer work for animal welfare</strong> because I hold the belief that animals deserve love, protection, and advocates on their behalf.
-      Their presence anchors me and serves as a constant reminder to be kind.
-    </p>
-    <p style="font-size: 1rem;">
-      I take pleasure in <strong>creating small coding projects</strong> and <strong>exploring open-source tools</strong> to understand their workings.
-      It is exciting to solve actual problems with clean, functional code.
-    </p>
-    <p style="font-size: 1rem;">
-      I enjoy <strong>games that are based on logic</strong>, tech puzzles, and even some casual gaming now and then to refresh my brain
-      (and engage in friendly trash-talk with friends!).
-    </p>
-    <p style="font-size: 1rem;">
-      I constantly read about <strong>AI, startups, and personal development</strong>.
-      I'm all in for anything that challenges my thinking or enhances my way of living.
-    </p>
-    <p style="font-size: 1rem;">
-      My happy place? <strong>Instrumental tunes in the background</strong> as I code or jot down ideas.
-    </p>
-  </section>
-  
-  
-  <section id="passion" class="section">
-    <h2>My Passion & Vision</h2>
-    <p>I'm passionate about using technology to simplify lives. I aim to become a strong backend developer and eventually build my own product/startup that serves real people and solves real problems.</p>
-    <p>I also enjoy mentoring juniors and helping classmates understand concepts. Teaching helps me grow too.</p>
-  </section>
-  
-  <section id="fun-facts" class="section">
-    <h2>5 Lines About Me</h2>
-    <ul>
-      <li>🧠 I love clean, structured code and thoughtful UI.</li>
-      <li>🚀 I'm always learning something new every week.</li>
-      <li>😄 I enjoy collaborating with people who care about details.</li>
-      <li>🎯 I prefer simplicity over complexity in design and logic.</li>
-      <li>📈 I believe in progress through consistency.</li>
-    </ul>
-  </section>
-  
-    
-  <section id="projects">
-    <h2>Mini Projects</h2>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Mayank Singh</span>
+                    </h1>
+                    <p class="hero-description">
+                        B.Tech CSE student passionate about solving real-world problems through data and technology. 
+                        Skilled in Python, SQL, and data analysis, with experience building management systems, trading 
+                        backtesters, and assistive tools like Smart Glasses for the visually impaired.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="resume.pdf" target="_blank" class="btn btn-secondary btn-download" download>
+                            Download Resume
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/mayank-singh-367572246" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/thakurmayanksingh" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:mst29310@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="floating-elements">
+                            <div class="floating-element element-1">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="floating-element element-2">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="floating-element element-3">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="floating-element element-4">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-    <!-- Project Card Example -->
-    <div class="project-card">
-      <h3>To-Do List App</h3>
-      <p>A simple productivity tracker built using HTML, CSS, and JavaScript.</p>
-      <a href="https://github.com/your-username/todo-list-app" target="_blank">GitHub Repo</a>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Hello! I'm a 21-year-old with a curious, slightly sardonic heart who has a strong passion for music, animals, and the outdoors.
+                    </p>
+                    <p class="about-description">
+                        Perhaps it's my serene demeanor or the fact that I truly care, but I've always been the type of person who others open up to. I think it's important to support people in difficult times as well as in pleasant ones. My friends refer to me as the mature person who always puts the needs of others before their own. They're also not incorrect.
+                    </p>
+                    <p class="about-description">
+                        I have a special place in my heart for dogs, and if I'm by myself, you can probably find me strolling around a green space or losing myself in music. Nature is my reset button, and singing is my therapy.
+                    </p>
+                    <p class="about-description">
+                        Sarcasm, which keeps things light while maintaining a strong sense of groundedness, is my secret sauce since life is too short to be taken too seriously. I cherish sincere discussions, enduring friendships, and the small pleasures in life.
+                    </p>
+                    <p class="about-description">
+                        I, the dreamer, the listener, the artist, am reflected in this area. I appreciate you coming by. Let's collaborate, communicate, and perhaps even sing a few songs together.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>Years Learning</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1</h3>
+                            <p>Internship Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="profile.jpg" alt="Profile" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-table"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>PySpark</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Flask</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-area"></i>
+                            <span>Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Databases & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git/GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-book"></i>
+                            <span>Jupyter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Specializations</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Data Visualization</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Backtesting</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>IoT Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>FastAPI, Flask</li>
-      <li>SQL, MongoDB</li>
-    </ul>
-  </section>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Business Analyst Intern</h3>
+                            <span class="timeline-company">PANTECH Secure Solutions</span>
+                            <span class="timeline-date">Oct 2024 - Jan 2025</span>
+                        </div>
+                        <p class="timeline-location">Delhi, India</p>
+                        <ul class="timeline-achievements">
+                            <li>Developed and implemented a PDF extraction tool to automate key information retrieval from over 70+ government tender documents, increasing bid analysis efficiency by 60%</li>
+                            <li>Analyzed over 30+ IT equipment and vendor options using Excel and market research tools to identify sourcing combinations that boosted profitability by 15%</li>
+                            <li>Automated data entry and structured pricing, vendor terms, and technical specs for 40+ products by integrating Google Sheets with APIs, reducing manual effort by 50%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:mst29310@gmail.com">mst29310@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/thakurmayanksingh" target="_blank">github.com/thakurmayanksingh</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/mayank-singh-367572246" target="_blank">linkedin.com/in/mayank-singh-367572246</a></p>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-scroller">
+                <button class="scroll-btn prev" aria-label="Previous projects"><i class="fas fa-chevron-left"></i></button>
+                <div class="projects-track">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-glasses"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Glasses for Visually Impaired</h3>
+                        <p class="project-description">
+                            Currently designing assistive smart glasses using Raspberry Pi and sensors as a B. Tech final year project, 
+                            aiming to enable navigation, object detection, voice guidance, and text-to-speech reading.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge in-progress">In Progress</span>
+                        </div>
+                    </div>
+                </div>
 
-  <footer>
-    <p>© 2025 Mayank Singh</p>
-  </footer>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/thakurmayanksingh/BollingerBands_Backtester" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/thakurmayanksingh/BollingerBands_Backtester" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bollinger Backtesting Model</h3>
+                        <p class="project-description">
+                            Developed a Bollinger Bands backtesting model on 10+ years of historical stock data using Python, 
+                            integrated a custom buy/sell strategy, and improved strategy evaluation with visual insights.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/thakurmayanksingh/Contact-Management-System" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/thakurmayanksingh/Contact-Management-System" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-address-book"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Contact Management System</h3>
+                        <p class="project-description">
+                            Built a modular CLI contact management system with role-based access (Admin/Guest), 
+                            supporting CRUD operations, search, and CSV export for efficiently managing 500+ contacts.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">CLI</span>
+                            <span class="tech-tag">CSV</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button class="scroll-btn next" aria-label="Next projects"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic background</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-degree">B.Tech - Computer Science & Engineering</h3>
+                        <h4 class="education-institution">Pranveer Singh Institute of Technology (PSIT)</h4>
+                        <p class="education-specialization">Computer Science and Engineering - Internet of Things [CS-IOT]</p>
+                        <p class="education-duration">2022 - 2026</p>
+                        <p class="education-location">Kanpur, Uttar Pradesh</p>
+                        <div class="education-grade">
+                            <span class="grade-label">Percentage:</span>
+                            <span class="grade-value">74.00% (Till 6th Semester)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-degree">Intermediate (12th)</h3>
+                        <h4 class="education-institution">Allahabad Public School & College</h4>
+                        <p class="education-specialization">CBSE Board</p>
+                        <p class="education-duration">2022</p>
+                        <p class="education-location">Prayagraj, Uttar Pradesh</p>
+                        <div class="education-grade">
+                            <span class="grade-label">Percentage:</span>
+                            <span class="grade-value">74.80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-degree">Matriculation (10th)</h3>
+                        <h4 class="education-institution">Allahabad Public School & College</h4>
+                        <p class="education-specialization">CBSE Board</p>
+                        <p class="education-duration">2020</p>
+                        <p class="education-location">Prayagraj, Uttar Pradesh</p>
+                        <div class="education-grade">
+                            <span class="grade-label">Percentage:</span>
+                            <span class="grade-value">88.00%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Kanpur, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91-6388482337</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>mst29310@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="sendEmail(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Mayank Singh. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/mayank-singh-367572246" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/thakurmayanksingh" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mst29310@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
